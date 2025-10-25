@@ -13,7 +13,7 @@ namespace JapaneseKanjiService
             Greeting greeting = _greetings.ElementAt(
                 Random.Shared.Next(_greetings.Count));
 
-            return $"{greeting.Katakana}: {greeting.Kanji}";
+            return $"{greeting.Hiragana}: {greeting.Kanji}";
         }
 
 
@@ -36,7 +36,7 @@ namespace JapaneseKanjiService
 
         };
 
-        public record Greeting(string Katakana, string Kanji);
+        public record Greeting(string Hiragana, string Kanji);
 
     }
 }
